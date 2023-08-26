@@ -22,10 +22,10 @@ Save the Clean data to the file
 import pandas as pd
 df=pd.read_csv('SAMPLEDS.csv')
 df
-![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/4dbac47e-39d3-41a9-bf26-85eba5bdb704)
+![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/52e96803-1f79-4540-a285-b2bf137a9ee1)
 
 df.shape
-
+![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/4dbac47e-39d3-41a9-bf26-85eba5bdb704)
 
 df.head()
 
