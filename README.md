@@ -22,6 +22,7 @@ Save the Clean data to the file
 import pandas as pd
 df=pd.read_csv('SAMPLEDS.csv')
 df
+![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/4dbac47e-39d3-41a9-bf26-85eba5bdb704)
 
 df.shape
 
@@ -29,6 +30,7 @@ df.shape
 df.head()
 
 df.tail()
+![Uploading image.png…]()
 
 df.describe()
 
