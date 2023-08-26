@@ -19,6 +19,7 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE and OUTPUT
+'''
 import pandas as pd
 df=pd.read_csv('SAMPLEDS.csv')
 df
@@ -106,3 +107,4 @@ for x in df.index:
 df
 
 df.drop(['DOB'],axis=1)
+'''
