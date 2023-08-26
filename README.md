@@ -46,7 +46,7 @@ df.describe()
  ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/e00c1c52-e04f-438c-a54f-220a07e341c5)
 
 df.info()
-
+![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/955afe63-cdc5-4806-ba3c-0c3da0add215)
 
 df.isnull().sum(*)
 
