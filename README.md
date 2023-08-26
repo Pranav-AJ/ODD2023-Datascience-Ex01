@@ -39,8 +39,6 @@ df.head()
 
 df.tail()
 
-![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/bb82c738-9c5c-4e6d-9519-9ad9db5ae036)
-
 
 
 df.describe()
