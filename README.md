@@ -19,9 +19,11 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE and OUTPUT
-'''
+
 import pandas as pd
+
 df=pd.read_csv('SAMPLEDS.csv')
+
 df
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/52e96803-1f79-4540-a285-b2bf137a9ee1)
 
@@ -31,7 +33,7 @@ df.shape
 df.head()
 
 df.tail()
-![Uploading image.png…]()
+
 
 df.describe()
 
@@ -107,4 +109,4 @@ for x in df.index:
 df
 
 df.drop(['DOB'],axis=1)
-'''
+
