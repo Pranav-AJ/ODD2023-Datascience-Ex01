@@ -23,21 +23,32 @@ Save the Clean data to the file
 import pandas as pd
 
 df=pd.read_csv('SAMPLEDS.csv')
-
 df
+
+
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/52e96803-1f79-4540-a285-b2bf137a9ee1)
 
 df.shape
+
+
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/4dbac47e-39d3-41a9-bf26-85eba5bdb704)
 
 df.head()
 
+![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/45b1a32f-7f7a-4c90-ad5d-b1562cf7627d)
+
 df.tail()
+
+![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/bb82c738-9c5c-4e6d-9519-9ad9db5ae036)
+
 
 
 df.describe()
 
+ ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/e00c1c52-e04f-438c-a54f-220a07e341c5)
+
 df.info()
+
 
 df.isnull().sum(*)
 
