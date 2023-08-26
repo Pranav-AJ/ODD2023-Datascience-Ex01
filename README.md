@@ -19,3 +19,90 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE and OUTPUT
+import pandas as pd
+df=pd.read_csv('SAMPLEDS.csv')
+df
+![image](https://github.com/Karthi-Govindharaju/ODD2023-Datascience-Ex01/assets/118904526/2ae02364-5072-4ba1-b3e6-5151917a10c8)
+
+df.shape
+![image](https://github.com/Karthi-Govindharaju/ODD2023-Datascience-Ex01/assets/118904526/5d916f84-8663-4b17-a6a1-90341594cb9f)
+
+
+df.head()
+
+df.tail()
+
+df.describe()
+
+df.info()
+
+df.isnull().sum(*)
+
+df.dropna(how='any')
+
+
+n=df.dropna(how='any')
+n.shape
+
+df.dropna(how="all")#if all the values in rows are null
+
+tot=df.dropna(subset=['TOTAL','M1','M2','M3','M4'],how='any')
+tot
+
+df.fillna(0)
+
+df
+
+
+df.fillna(method='ffill')
+
+df.fillna(method='bfill')
+
+df.interpolate()
+
+mn=df.TOTAL.mean()
+mn
+df.TOTAL.fillna(mn,inplace=True)
+df
+
+l=df.M1.interpolate()
+l
+df.M1.fillna(l,inplace=True)
+
+
+df
+
+med=df.M2.median()
+med
+
+df.M2.fillna(med,inplace=True)
+df
+
+m=df.M3.mode()
+m
+
+df.M3.fillna(m,inplace=True)
+df
+
+n=df.M4.mode()
+n
+
+s=df.M4.fillna(n,inplace=True)
+
+
+df
+
+df.duplicated()
+
+df.drop_duplicates(inplace=True)
+df
+
+df['cd']=pd.to_datetime(df['DOB'])
+df
+
+for x in df.index:
+  if df.loc[x,'AVG']>100:
+    df.drop(x,inplace=True)
+df
+
+df.drop(['DOB'],axis=1)
