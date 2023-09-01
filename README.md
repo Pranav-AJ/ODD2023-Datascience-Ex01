@@ -19,12 +19,11 @@ Remove the null values from the data
 Save the Clean data to the file
 
 # CODE and OUTPUT
-
+```
 import pandas as pd
-
 df=pd.read_csv('SAMPLEDS.csv')
 df
-
+```
 
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/52e96803-1f79-4540-a285-b2bf137a9ee1)
 
@@ -65,10 +64,10 @@ df.dropna(how="all")
 
 
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/0558b941-ddc3-442a-a0bf-6361a697d205)
-
+```
 tot=df.dropna(subset=['TOTAL','M1','M2','M3','M4'],how='any')
 print(tot)
-
+```
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/57f986ef-a6c3-4fda-9e26-4c57296785f9)
 
 df.fillna(0)
@@ -86,54 +85,56 @@ df.fillna(method='bfill')
 df.interpolate()
 
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/e5b04fdc-3e4b-4dcd-a725-535c1fd7393b)
-
+```
 mn=df.TOTAL.mean()
 df.TOTAL.fillna(mn,inplace=True)
 df
-
+```
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/625541ab-0785-4856-8869-3eef4606f559)
 
-
+```
 l=df.M1.interpolate()
 df.M1.fillna(l,inplace=True)
 df
-
+```
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/285392a1-d36f-47d2-b3e4-3bdf3eed33c0)
-
+```
 med=df.M2.median()
 med
-
+```
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/68fd85e2-7224-4832-a517-1bc7e2f9967a)
-
+```
 df.M2.fillna(med,inplace=True)
 df
-
+```
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/b5da6799-ba73-4c3d-8f31-0130cc261dfd)
-
+```
 m=df.M3.mode()
 m
-
+```
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/427c52b8-636e-405f-afb4-77a263e582b2)
 
 df.duplicated()
 
 
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/5c345a49-d666-430d-8aa9-b73b184351a6)
-
+```
 df.drop_duplicates(inplace=True)
 df
-
+```
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/1fe722ef-a0e1-421b-83b8-a6ff4ed8f18f)
-
+```
 df['cd']=pd.to_datetime(df['DOB'])
 df
-
+```
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/8b4a143c-973a-4e23-9f71-5a8dd23d6110)
 
+```
 for x in df.index:
   if df.loc[x,'AVG']>100:
     df.drop(x,inplace=True)
 df
+```
 
 ![image](https://github.com/Pranav-AJ/ODD2023-Datascience-Ex01/assets/118904526/571a24f5-9579-4b90-ad98-11079b95998f)
 
